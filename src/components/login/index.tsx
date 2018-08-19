@@ -6,13 +6,20 @@ export default class Login extends React.Component {
     title: ""
   };
 
-  componentDidMount() {
-    axios.get("http://localhost:8080/say/hello").then(response => {
-      this.setState({
-        title: response.data
-      });
+  async componentDidMount() {
+    const res = await axios.get("http://localhost:8080/say/hello");
+    this.setState({
+      title: res.data
     });
   }
+
+  // componentDidMount() {
+  //   axios.get("http://localhost:8080/say/hello").then((res: any) => {
+  //     this.setState({
+  //       title: res.data
+  //     });
+  //   });
+  // }
 
   render() {
     return (
