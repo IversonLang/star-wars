@@ -18,6 +18,8 @@ import { RouteProps } from "react-router-dom";
 // your own React components
 import Example from "@/components/example";
 import Login from "@/components/login";
+import Register from "@/components/register"
+
 
 // ----------------------------------------------------------------------------
 
@@ -34,6 +36,11 @@ const routes: RouteProps[] = [
     component: Login, // <-- this is the component that'll be rendered
     exact: true, // <-- this says to ONLY match when the path is exactly '/'
     path: "/login" // <-- ... and this is the actual path to match on
+  },
+  {
+    component: Register,
+    exact: true, 
+    path: "/register" 
   }
 ];
 
