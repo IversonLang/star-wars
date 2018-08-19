@@ -20,7 +20,7 @@ import HackerNews from "./hackernews";
 // Say hello from GraphQL, along with a HackerNews feed fetched by GraphQL
 export default () => (
   <>
-    <h1>Hi from ReactQL</h1>
+    <h1>Hi from ReactQL1</h1>
     <Count />
     <HackerNews />
   </>

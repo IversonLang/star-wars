@@ -17,6 +17,7 @@ import { RouteProps } from "react-router-dom";
 // the `src/components/example` folder and replace the following line with
 // your own React components
 import Example from "@/components/example";
+import Login from "@/components/login";
 
 // ----------------------------------------------------------------------------
 
@@ -27,8 +28,13 @@ const routes: RouteProps[] = [
   {
     component: Example, // <-- this is the component that'll be rendered
     exact: true, // <-- this says to ONLY match when the path is exactly '/'
-    path: "/", // <-- ... and this is the actual path to match on
+    path: "/" // <-- ... and this is the actual path to match on
   },
+  {
+    component: Login, // <-- this is the component that'll be rendered
+    exact: true, // <-- this says to ONLY match when the path is exactly '/'
+    path: "/login" // <-- ... and this is the actual path to match on
+  }
 ];
 
 export default routes;
