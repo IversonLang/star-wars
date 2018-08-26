@@ -20,14 +20,12 @@ export default class Register extends React.Component {
     }
 
     handlePasswdOnChage(event: any) {
-        console.log(event.target.value)
         this.setState({
             passwd: event.target.value
         })
     }
 
     handleBtnSubmit() {
-        console.log('test')
         axios.post('/http://localhost:8080/account/register', {
             name: this.state.name,
             passwd: this.state.passwd
